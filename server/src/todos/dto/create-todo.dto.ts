@@ -1,4 +1,1 @@
-
-export class CreateTodoDto {
-
-}
+export class CreateTodoDto {}
