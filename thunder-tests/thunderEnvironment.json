@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "b9b009b5-b31d-4ba7-b407-6e6bbd19845f",
+    "name": "development",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2023-02-06T13:44:51.635Z",
+    "modified": "2023-02-06T13:44:51.635Z",
+    "data": [
+      {
+        "name": "protocol",
+        "value": "http"
+      },
+      {
+        "name": "host",
+        "value": "localhost"
+      },
+      {
+        "name": "port",
+        "value": "3000"
+      }
+    ]
+  }
+]
