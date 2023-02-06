@@ -6,7 +6,14 @@ import { AppService } from './app.service';
 import { TodosModule } from './todos/todos.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ cache: true, isGlobal: true }), TodosModule],
+  imports: [
+    ConfigModule.forRoot({
+      cache: true,
+      isGlobal: true,
+      envFilePath: ['.env.local', '.env'],
+    }),
+    TodosModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
