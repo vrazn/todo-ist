@@ -58,7 +58,7 @@ export class DatabaseService<T> implements DatabaseInterface<T> {
 
   select(params: SelectParams): Promise<T[]> {
     const query = `SELECT ${params.query} FROM ${this.tableName}${
-      params.where ? ` WHERE ${params.where}` : ''
+      params.where ? ` WHERE ${params.where};` : ';'
     }`;
 
     return this.runQuery(query, params.variables);
