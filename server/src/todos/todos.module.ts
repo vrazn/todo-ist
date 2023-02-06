@@ -1,8 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TodosService } from './todos.service';
 import { TodosController } from './todos.controller';
+import { DatabaseModule } from '../database/database.module';
 
 @Module({
+  imports: [DatabaseModule.forFeature({ tableName: 'todos' })],
   controllers: [TodosController],
   providers: [TodosService],
 })

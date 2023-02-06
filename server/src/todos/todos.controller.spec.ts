@@ -5,6 +5,8 @@ import { Todo } from './entities/todo.entity';
 import { TodosController } from './todos.controller';
 import { TodosService } from './todos.service';
 
+import { createDatabaseProviderToken } from '../database/database.provider';
+
 describe('TodosController', () => {
   let controller: TodosController;
   let service: TodosService;
@@ -12,7 +14,18 @@ describe('TodosController', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [TodosController],
-      providers: [TodosService],
+      providers: [
+        TodosService,
+        {
+          provide: createDatabaseProviderToken('todos'),
+          useValue: {
+            select: jest.fn(),
+            insert: jest.fn(),
+            update: jest.fn(),
+            delete: jest.fn(),
+          },
+        },
+      ],
     }).compile();
 
     controller = module.get<TodosController>(TodosController);
