@@ -16,13 +16,17 @@ export class TodosService {
 
   async create(createTodoDto: CreateTodoDto): Promise<Todo> {
     const { keys, values, indexes } = Object.keys(createTodoDto).reduce(
-      (acc, key: keyof CreateTodoDto, index) => {
+      (acc, key, index) => {
         acc.keys.push(snakeCase(key));
-        acc.values.push(createTodoDto[key]);
+        acc.values.push(createTodoDto[key as keyof CreateTodoDto]);
         acc.indexes.push(`$${index + 1}`);
         return acc;
       },
-      { keys: [] as string[], values: [] as string[], indexes: [] as string[] },
+      { keys: [], values: [], indexes: [] } as {
+        keys: string[];
+        values: string[];
+        indexes: string[];
+      },
     );
 
     const [result] = await this.db.insert({
@@ -53,10 +57,7 @@ export class TodosService {
     const values = Object.values(updateTodoDto);
 
     const query = keys
-      .map(
-        (key: keyof UpdateTodoDto, index) =>
-          `${snakeCase(key)} = $${index + 1}`,
-      )
+      .map((key, index) => `${snakeCase(key)} = $${index + 1}`)
       .join(', ');
 
     const [result] = await this.db.update({
