@@ -7,6 +7,20 @@ import { TodosService } from './todos.service';
 
 import { createDatabaseProviderToken } from '../database/database.provider';
 
+const createDto: CreateTodoDto = {
+  title: 'Test',
+  isImportant: false,
+};
+
+const todoStub: Todo = {
+  id: 1,
+  title: 'Test',
+  description: null,
+  isImportant: false,
+  isDone: false,
+  dueDate: null,
+};
+
 describe('TodosController', () => {
   let controller: TodosController;
   let service: TodosService;
@@ -42,23 +56,14 @@ describe('TodosController', () => {
     });
 
     it('should return the result of TodosService.create', async () => {
-      const createDto: CreateTodoDto = {
-        title: 'Test',
-      };
-      const createStub: Todo = {
-        id: 1,
-        title: 'Test',
-        isDone: false,
-      };
-
       jest
         .spyOn(service, 'create')
-        .mockImplementation(() => Promise.resolve(createStub));
+        .mockImplementation(() => Promise.resolve(todoStub));
 
       const result = await controller.create(createDto);
 
       expect(service.create).toHaveBeenCalledWith(createDto);
-      expect(result).toEqual(createStub);
+      expect(result).toEqual(todoStub);
     });
   });
 
@@ -68,7 +73,7 @@ describe('TodosController', () => {
     });
 
     it('should return the result of TodosService.findAll', async () => {
-      const findAllStub: Todo[] = [{ id: 1, title: 'Test', isDone: false }];
+      const findAllStub: Todo[] = [todoStub];
 
       jest
         .spyOn(service, 'findAll')
@@ -87,20 +92,14 @@ describe('TodosController', () => {
     });
 
     it('should return the result of TodosService.findOne', async () => {
-      const findOneStub: Todo = {
-        id: 1,
-        title: 'Test',
-        isDone: false,
-      };
-
       jest
         .spyOn(service, 'findOne')
-        .mockImplementation(() => Promise.resolve(findOneStub));
+        .mockImplementation(() => Promise.resolve(todoStub));
 
       const result = await controller.findOne(1);
 
       expect(service.findOne).toHaveBeenCalledWith(1);
-      expect(result).toBe(findOneStub);
+      expect(result).toBe(todoStub);
     });
   });
 
@@ -110,20 +109,14 @@ describe('TodosController', () => {
     });
 
     it('should return the result of TodosService.update', async () => {
-      const updateStub: Todo = {
-        id: 1,
-        title: 'Test',
-        isDone: false,
-      };
-
       jest
         .spyOn(service, 'update')
-        .mockImplementation(() => Promise.resolve(updateStub));
+        .mockImplementation(() => Promise.resolve(todoStub));
 
-      const result = await controller.update(1, updateStub);
+      const result = await controller.update(1, todoStub);
 
-      expect(service.update).toHaveBeenCalledWith(1, updateStub);
-      expect(result).toBe(updateStub);
+      expect(service.update).toHaveBeenCalledWith(1, todoStub);
+      expect(result).toBe(todoStub);
     });
   });
 
@@ -133,19 +126,13 @@ describe('TodosController', () => {
     });
 
     it('should return the result of TodosService.remove', async () => {
-      const removeStub: Todo = {
-        id: 1,
-        title: 'Test',
-        isDone: false,
-      };
-
       jest
         .spyOn(service, 'remove')
-        .mockImplementation(() => Promise.resolve(removeStub));
+        .mockImplementation(() => Promise.resolve(todoStub));
 
       const result = await controller.remove(1);
       expect(service.remove).toHaveBeenCalledWith(1);
-      expect(result).toBe(removeStub);
+      expect(result).toBe(todoStub);
     });
   });
 });

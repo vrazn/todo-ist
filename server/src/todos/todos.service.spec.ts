@@ -101,12 +101,15 @@ describe('TodosService', () => {
     it('should return the result of db.insert', async () => {
       const createSpy = jest.spyOn(db, 'insert');
 
-      const result = await service.create({ title: 'Test' });
+      const result = await service.create({
+        title: 'Test',
+        isImportant: false,
+      });
 
       expect(createSpy).toBeCalledWith({
-        query: 'title',
-        where: '$1',
-        variables: ['Test'],
+        query: 'title, is_important',
+        where: '$1, $2',
+        variables: ['Test', false],
       });
 
       expect(result).toEqual(returnResult[0]);

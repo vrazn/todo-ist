@@ -17,14 +17,17 @@ export class TodosService {
   async create(createTodoDto: CreateTodoDto): Promise<Todo> {
     const { keys, values, indexes } = Object.keys(createTodoDto).reduce(
       (acc, key, index) => {
-        acc.keys.push(snakeCase(key));
-        acc.values.push(createTodoDto[key as keyof CreateTodoDto]);
-        acc.indexes.push(`$${index + 1}`);
+        const value = createTodoDto[key as keyof CreateTodoDto];
+        if (value !== undefined) {
+          acc.keys.push(snakeCase(key));
+          acc.values.push(value);
+          acc.indexes.push(`$${index + 1}`);
+        }
         return acc;
       },
       { keys: [], values: [], indexes: [] } as {
         keys: string[];
-        values: string[];
+        values: (string | number | boolean | null)[];
         indexes: string[];
       },
     );
