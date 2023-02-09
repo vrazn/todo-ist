@@ -70,7 +70,9 @@ export class DatabaseService<T> implements DatabaseInterface<T> {
   }
 
   update(params: UpdateParams): Promise<T[]> {
-    const query = `UPDATE ${this.tableName} SET ${params.query} WHERE ${params.where} RETURNING *;`;
+    const query = `UPDATE ${this.tableName} SET id = id${
+      params.query ? `, ${params.query}` : ''
+    } WHERE ${params.where} RETURNING *;`;
     return this.runQuery(query, params.variables);
   }
 

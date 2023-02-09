@@ -111,7 +111,25 @@ describe('DatabaseService', () => {
       expect(result).toEqual(returnResult);
 
       expect(updateSpy).toBeCalledWith(
-        `UPDATE ${tableName} SET column1 = $1 WHERE column2 = $2 RETURNING *;`,
+        `UPDATE ${tableName} SET id = id, column1 = $1 WHERE column2 = $2 RETURNING *;`,
+        ['value1', 'value2'],
+      );
+    });
+
+    it('should run an update query successfully when the body is empty', async () => {
+      // @ts-expect-error spying on private method
+      const updateSpy = jest.spyOn(service, 'runQuery');
+
+      const result = await service.update({
+        query: '',
+        where: 'column2 = $2',
+        variables: ['value1', 'value2'],
+      });
+
+      expect(result).toEqual(returnResult);
+
+      expect(updateSpy).toBeCalledWith(
+        `UPDATE ${tableName} SET id = id WHERE column2 = $2 RETURNING *;`,
         ['value1', 'value2'],
       );
     });
