@@ -3,7 +3,7 @@
 A monorepo for a todo-list application built with Next.js and Nest.js.
 
 ## Demo
-[Link](http://ec2-16-162-252-234.ap-east-1.compute.amazonaws.com:3000)
+[Link](http://ec2-16-162-178-0.ap-east-1.compute.amazonaws.com:3000)
 
 ## Documentation
 [Server](https://github.com/vrazn/todo-list/tree/master/server#readme)
