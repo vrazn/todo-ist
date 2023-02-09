@@ -1,0 +1,8 @@
+.card-done {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.icon {
+  font-size: 18;
+}
