@@ -1,7 +1,7 @@
 -- Databases to be used.
-SELECT 'CREATE DATABASE "todo-ist"'
-WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = '"todo-ist"')\gexec
-\c todo-ist;
+SELECT 'CREATE DATABASE "todo-list"'
+WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = '"todo-list"')\gexec
+\c todo-list;
 
 -- Tables to be used.
 DROP TABLE IF EXISTS todos;
