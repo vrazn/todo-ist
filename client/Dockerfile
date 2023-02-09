@@ -9,7 +9,7 @@ FROM --platform=linux/x86-64 node:18.14-alpine AS builder
 
 COPY src ./src
 COPY public ./public
-COPY .env .env.local next.config.js package.json tsconfig.json ./
+COPY .env next.config.js package.json tsconfig.json ./
 COPY --from=deps node_modules ./node_modules
 RUN npm run build
 
@@ -17,6 +17,6 @@ FROM --platform=linux/x86-64 node:18.14-alpine AS runner
 COPY --from=builder node_modules ./node_modules
 COPY --from=builder .next ./.next
 
-COPY --from=builder .env .env.local next.config.js package.json ./
+COPY --from=builder .env next.config.js package.json ./
 
 CMD ["npm", "start"]
