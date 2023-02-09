@@ -13,7 +13,10 @@ services:
       - db:/var/lib/postgresql/data
       - ./server/src/database/migration.sql:/docker-entrypoint-initdb.d/create_tables.sql
   api:
-    image: vrazn/todo-api
+    container_name: todo-api
+    build:
+      context: ./server
+    image: todo-api
     depends_on:
       - db
     ports:
@@ -29,7 +32,10 @@ services:
       - db
 
   client:
-    image: vrazn/todo-client
+    container_name: todo-client
+    build:
+      context: ./client
+    image: todo-client
     depends_on:
       - db
     ports:
