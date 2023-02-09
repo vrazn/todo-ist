@@ -1,0 +1,436 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LeftSider when screen is large renders without change 1`] = `
+<div>
+  <aside
+    class="ant-layout-sider ant-layout-sider-light ant-layout-sider-collapsed ant-layout-sider-below sider"
+    style="max-width: 80px; min-width: 80px; width: 80px; flex: 0 0 80px;"
+  >
+    <div
+      class="ant-layout-sider-children"
+    >
+      <div
+        class="button-container"
+      >
+        <button
+          class="ant-btn css-dev-only-do-not-override-ixblex ant-btn-primary ant-btn-lg ant-btn-block"
+          type="button"
+        >
+          <span
+            aria-label="file-add"
+            class="anticon anticon-file-add"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="file-add"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM544 472c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v108H372c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h108v108c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V644h108c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H544V472z"
+              />
+            </svg>
+          </span>
+          <span>
+            Add new task
+          </span>
+        </button>
+      </div>
+      <ul
+        class="ant-menu ant-menu-root ant-menu-vertical ant-menu-light ant-menu-inline-collapsed css-dev-only-do-not-override-ixblex"
+        data-menu-list="true"
+        role="menu"
+        tabindex="0"
+      >
+        <li
+          class="ant-menu-item ant-menu-item-selected"
+          data-menu-id="rc-menu-uuid-test-all"
+          role="menuitem"
+          style="padding-left: 24px;"
+          tabindex="-1"
+        >
+          <span
+            aria-label="profile"
+            class="anticon anticon-profile ant-menu-item-icon"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="profile"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656zM492 400h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H492c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8zm0 144h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H492c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8zm0 144h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H492c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8zM340 368a40 40 0 1080 0 40 40 0 10-80 0zm0 144a40 40 0 1080 0 40 40 0 10-80 0zm0 144a40 40 0 1080 0 40 40 0 10-80 0z"
+              />
+            </svg>
+          </span>
+          <span
+            class="ant-menu-title-content"
+          >
+            All tasks
+          </span>
+        </li>
+        <li
+          class="ant-menu-item"
+          data-menu-id="rc-menu-uuid-test-today"
+          role="menuitem"
+          style="padding-left: 24px;"
+          tabindex="-1"
+        >
+          <span
+            aria-label="clock-circle"
+            class="anticon anticon-clock-circle ant-menu-item-icon"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="clock-circle"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+              />
+              <path
+                d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"
+              />
+            </svg>
+          </span>
+          <span
+            class="ant-menu-title-content"
+          >
+            Today's tasks
+          </span>
+        </li>
+        <li
+          class="ant-menu-item"
+          data-menu-id="rc-menu-uuid-test-important"
+          role="menuitem"
+          style="padding-left: 24px;"
+          tabindex="-1"
+        >
+          <span
+            aria-label="file-exclamation"
+            class="anticon anticon-file-exclamation ant-menu-item-icon"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="file-exclamation"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM472 744a40 40 0 1080 0 40 40 0 10-80 0zm16-104h48c4.4 0 8-3.6 8-8V448c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v184c0 4.4 3.6 8 8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="ant-menu-title-content"
+          >
+            Important tasks
+          </span>
+        </li>
+        <li
+          class="ant-menu-item"
+          data-menu-id="rc-menu-uuid-test-uncompleted"
+          role="menuitem"
+          style="padding-left: 24px;"
+          tabindex="-1"
+        >
+          <span
+            aria-label="file-excel"
+            class="anticon anticon-file-excel ant-menu-item-icon"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="file-excel"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM514.1 580.1l-61.8-102.4c-2.2-3.6-6.1-5.8-10.3-5.8h-38.4c-2.3 0-4.5.6-6.4 1.9-5.6 3.5-7.3 10.9-3.7 16.6l82.3 130.4-83.4 132.8a12.04 12.04 0 0010.2 18.4h34.5c4.2 0 8-2.2 10.2-5.7L510 664.8l62.3 101.4c2.2 3.6 6.1 5.7 10.2 5.7H620c2.3 0 4.5-.7 6.5-1.9 5.6-3.6 7.2-11 3.6-16.6l-84-130.4 85.3-132.5a12.04 12.04 0 00-10.1-18.5h-35.7c-4.2 0-8.1 2.2-10.3 5.8l-61.2 102.3z"
+              />
+            </svg>
+          </span>
+          <span
+            class="ant-menu-title-content"
+          >
+            Uncompleted tasks
+          </span>
+        </li>
+        <li
+          class="ant-menu-item"
+          data-menu-id="rc-menu-uuid-test-completed"
+          role="menuitem"
+          style="padding-left: 24px;"
+          tabindex="-1"
+        >
+          <span
+            aria-label="file-done"
+            class="anticon anticon-file-done ant-menu-item-icon"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="file-done"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M688 312v-48c0-4.4-3.6-8-8-8H296c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h384c4.4 0 8-3.6 8-8zm-392 88c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H296zm376 116c-119.3 0-216 96.7-216 216s96.7 216 216 216 216-96.7 216-216-96.7-216-216-216zm107.5 323.5C750.8 868.2 712.6 884 672 884s-78.8-15.8-107.5-44.5C535.8 810.8 520 772.6 520 732s15.8-78.8 44.5-107.5C593.2 595.8 631.4 580 672 580s78.8 15.8 107.5 44.5C808.2 653.2 824 691.4 824 732s-15.8 78.8-44.5 107.5zM761 656h-44.3c-2.6 0-5 1.2-6.5 3.3l-63.5 87.8-23.1-31.9a7.92 7.92 0 00-6.5-3.3H573c-6.5 0-10.3 7.4-6.5 12.7l73.8 102.1c3.2 4.4 9.7 4.4 12.9 0l114.2-158c3.9-5.3.1-12.7-6.4-12.7zM440 852H208V148h560v344c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V108c0-17.7-14.3-32-32-32H168c-17.7 0-32 14.3-32 32v784c0 17.7 14.3 32 32 32h272c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="ant-menu-title-content"
+          >
+            Completed tasks
+          </span>
+        </li>
+      </ul>
+      <div
+        aria-hidden="true"
+        style="display: none;"
+      />
+    </div>
+  </aside>
+</div>
+`;
+
+exports[`LeftSider when screen is small renders without change 1`] = `
+<div>
+  <aside
+    class="ant-layout-sider ant-layout-sider-light sider"
+    style="flex: 0 0 300px; max-width: 300px; min-width: 300px; width: 300px;"
+  >
+    <div
+      class="ant-layout-sider-children"
+    >
+      <div
+        class="button-container"
+      >
+        <button
+          class="ant-btn css-dev-only-do-not-override-ixblex ant-btn-primary ant-btn-lg ant-btn-icon-only ant-btn-block"
+          type="button"
+        >
+          <span
+            aria-label="file-add"
+            class="anticon anticon-file-add"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="file-add"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM544 472c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v108H372c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h108v108c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V644h108c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H544V472z"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <ul
+        class="ant-menu ant-menu-root ant-menu-inline ant-menu-light css-dev-only-do-not-override-ixblex"
+        data-menu-list="true"
+        role="menu"
+        tabindex="0"
+      >
+        <li
+          class="ant-menu-item ant-menu-item-selected"
+          data-menu-id="rc-menu-uuid-test-all"
+          role="menuitem"
+          style="padding-left: 24px;"
+          tabindex="-1"
+        >
+          <span
+            aria-label="profile"
+            class="anticon anticon-profile ant-menu-item-icon"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="profile"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656zM492 400h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H492c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8zm0 144h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H492c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8zm0 144h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H492c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8zM340 368a40 40 0 1080 0 40 40 0 10-80 0zm0 144a40 40 0 1080 0 40 40 0 10-80 0zm0 144a40 40 0 1080 0 40 40 0 10-80 0z"
+              />
+            </svg>
+          </span>
+          <span
+            class="ant-menu-title-content"
+          >
+            All tasks
+          </span>
+        </li>
+        <li
+          class="ant-menu-item"
+          data-menu-id="rc-menu-uuid-test-today"
+          role="menuitem"
+          style="padding-left: 24px;"
+          tabindex="-1"
+        >
+          <span
+            aria-label="clock-circle"
+            class="anticon anticon-clock-circle ant-menu-item-icon"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="clock-circle"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+              />
+              <path
+                d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"
+              />
+            </svg>
+          </span>
+          <span
+            class="ant-menu-title-content"
+          >
+            Today's tasks
+          </span>
+        </li>
+        <li
+          class="ant-menu-item"
+          data-menu-id="rc-menu-uuid-test-important"
+          role="menuitem"
+          style="padding-left: 24px;"
+          tabindex="-1"
+        >
+          <span
+            aria-label="file-exclamation"
+            class="anticon anticon-file-exclamation ant-menu-item-icon"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="file-exclamation"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM472 744a40 40 0 1080 0 40 40 0 10-80 0zm16-104h48c4.4 0 8-3.6 8-8V448c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v184c0 4.4 3.6 8 8 8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="ant-menu-title-content"
+          >
+            Important tasks
+          </span>
+        </li>
+        <li
+          class="ant-menu-item"
+          data-menu-id="rc-menu-uuid-test-uncompleted"
+          role="menuitem"
+          style="padding-left: 24px;"
+          tabindex="-1"
+        >
+          <span
+            aria-label="file-excel"
+            class="anticon anticon-file-excel ant-menu-item-icon"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="file-excel"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM514.1 580.1l-61.8-102.4c-2.2-3.6-6.1-5.8-10.3-5.8h-38.4c-2.3 0-4.5.6-6.4 1.9-5.6 3.5-7.3 10.9-3.7 16.6l82.3 130.4-83.4 132.8a12.04 12.04 0 0010.2 18.4h34.5c4.2 0 8-2.2 10.2-5.7L510 664.8l62.3 101.4c2.2 3.6 6.1 5.7 10.2 5.7H620c2.3 0 4.5-.7 6.5-1.9 5.6-3.6 7.2-11 3.6-16.6l-84-130.4 85.3-132.5a12.04 12.04 0 00-10.1-18.5h-35.7c-4.2 0-8.1 2.2-10.3 5.8l-61.2 102.3z"
+              />
+            </svg>
+          </span>
+          <span
+            class="ant-menu-title-content"
+          >
+            Uncompleted tasks
+          </span>
+        </li>
+        <li
+          class="ant-menu-item"
+          data-menu-id="rc-menu-uuid-test-completed"
+          role="menuitem"
+          style="padding-left: 24px;"
+          tabindex="-1"
+        >
+          <span
+            aria-label="file-done"
+            class="anticon anticon-file-done ant-menu-item-icon"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="file-done"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M688 312v-48c0-4.4-3.6-8-8-8H296c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h384c4.4 0 8-3.6 8-8zm-392 88c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H296zm376 116c-119.3 0-216 96.7-216 216s96.7 216 216 216 216-96.7 216-216-96.7-216-216-216zm107.5 323.5C750.8 868.2 712.6 884 672 884s-78.8-15.8-107.5-44.5C535.8 810.8 520 772.6 520 732s15.8-78.8 44.5-107.5C593.2 595.8 631.4 580 672 580s78.8 15.8 107.5 44.5C808.2 653.2 824 691.4 824 732s-15.8 78.8-44.5 107.5zM761 656h-44.3c-2.6 0-5 1.2-6.5 3.3l-63.5 87.8-23.1-31.9a7.92 7.92 0 00-6.5-3.3H573c-6.5 0-10.3 7.4-6.5 12.7l73.8 102.1c3.2 4.4 9.7 4.4 12.9 0l114.2-158c3.9-5.3.1-12.7-6.4-12.7zM440 852H208V148h560v344c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V108c0-17.7-14.3-32-32-32H168c-17.7 0-32 14.3-32 32v784c0 17.7 14.3 32 32 32h272c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="ant-menu-title-content"
+          >
+            Completed tasks
+          </span>
+        </li>
+      </ul>
+      <div
+        aria-hidden="true"
+        style="display: none;"
+      />
+    </div>
+  </aside>
+</div>
+`;
