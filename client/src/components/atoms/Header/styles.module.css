@@ -1,0 +1,10 @@
+.header {
+  padding: 0 !important; 
+  background: transparent !important;
+  margin-bottom: 16px;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header on fetch returning error renders without change 1`] = `
+<div>
+  <header
+    class="ant-layout-header header"
+  >
+    <div
+      class="ant-row ant-row-center css-dev-only-do-not-override-ixblex"
+    >
+      <div
+        class="ant-col ant-col-xs-23 ant-col-sm-23 ant-col-md-21 ant-col-lg-20 ant-col-xl-18 css-dev-only-do-not-override-ixblex"
+      >
+        <div
+          class="ant-row ant-row-end ant-row-middle css-dev-only-do-not-override-ixblex"
+        >
+          <div
+            class="ant-space css-dev-only-do-not-override-ixblex ant-space-horizontal ant-space-align-center"
+          >
+            <div
+              class="ant-space-item"
+            >
+              <span
+                class="ant-avatar ant-avatar-circle ant-avatar-image css-dev-only-do-not-override-ixblex"
+                style="width: 64px; height: 64px; line-height: 64px; font-size: 18px;"
+              >
+                <img
+                  src="https://avatars.githubusercontent.com/u/8733843?s=96"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Header on fetch returning non-empty array renders without change 1`] = `
+<div>
+  <header
+    class="ant-layout-header header"
+  >
+    <div
+      class="ant-row ant-row-center css-dev-only-do-not-override-ixblex"
+    >
+      <div
+        class="ant-col ant-col-xs-23 ant-col-sm-23 ant-col-md-21 ant-col-lg-20 ant-col-xl-18 css-dev-only-do-not-override-ixblex"
+      >
+        <div
+          class="ant-row ant-row-end ant-row-middle css-dev-only-do-not-override-ixblex"
+        >
+          <div
+            class="ant-space css-dev-only-do-not-override-ixblex ant-space-horizontal ant-space-align-center"
+          >
+            <div
+              class="ant-space-item"
+            >
+              <span
+                class="ant-avatar ant-avatar-circle ant-avatar-image css-dev-only-do-not-override-ixblex"
+                style="width: 64px; height: 64px; line-height: 64px; font-size: 18px;"
+              >
+                <img
+                  src="https://avatars.githubusercontent.com/u/8733843?s=96"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Header on initial load renders without change 1`] = `
+<div>
+  <header
+    class="ant-layout-header header"
+  >
+    <div
+      class="ant-row ant-row-center css-dev-only-do-not-override-ixblex"
+    >
+      <div
+        class="ant-col ant-col-xs-23 ant-col-sm-23 ant-col-md-21 ant-col-lg-20 ant-col-xl-18 css-dev-only-do-not-override-ixblex"
+      >
+        <div
+          class="ant-row ant-row-end ant-row-middle css-dev-only-do-not-override-ixblex"
+        >
+          <div
+            class="ant-space css-dev-only-do-not-override-ixblex ant-space-horizontal ant-space-align-center"
+          >
+            <div
+              class="ant-space-item"
+            >
+              <span
+                class="ant-avatar ant-avatar-circle ant-avatar-image css-dev-only-do-not-override-ixblex"
+                style="width: 64px; height: 64px; line-height: 64px; font-size: 18px;"
+              >
+                <img
+                  src="https://avatars.githubusercontent.com/u/8733843?s=96"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
