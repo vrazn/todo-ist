@@ -21,15 +21,12 @@ This project is based on [Nest.js](https://github.com/nestjs/nest) TypeScript st
 ## Preparing the database
 1. Install [PostgreSQL](https://www.postgresql.org/download/) for your system of choice and start the PostgreSQL server.
 
-2. Create a new PostgreSQL user (e.g `postgres`) with a password of your choice.
+2. Create a new PostgreSQL user `postgres` with password `postgres`.
 
 3. Run the migration script
     ```bash
-    $ psql -U {username from №2, e.g postgres} -h localhost -a -f src/database/migration.sql
+    $ psql -U postgres -h localhost -a -f src/database/migration.sql
     ```
-
-## Preparing the ENV
-Create a new `.env.local` file or fill in the missing parameters in the sample `.env` file.
 
 ## Running the app
 
