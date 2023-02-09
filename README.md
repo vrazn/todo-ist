@@ -32,4 +32,15 @@ The web application will then be available on `localhost:3000` and the server on
 ## Manual Installation
 
 Please follow the guides described in the [Server](https://github.com/vrazn/todo-list/tree/master/server#readme) and [Client](https://github.com/vrazn/todo-list/tree/master/client#readme) sections.
-Please ensure that you're running a PostgreSQL server, Server and the Client locally.
+
+Please ensure that you're running a PostgreSQL server, Server and the Client locally:
+
+```bash
+$ service postgresql start
+
+# ./client <-- terminal 1
+$ npm run dev
+
+# ./server <-- terminal 2
+$ npm start:dev
+```
