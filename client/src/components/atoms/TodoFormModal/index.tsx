@@ -36,16 +36,21 @@ export const TodoFormModal: React.FC<ITodoFormModalProps> = ({
   const onSave = useCallback(() => form.submit(), [form]);
 
   const handleSubmit = async (todo: ITodoCreationAttributes) => {
-    if (todo.dueDate) {
-      todo.dueDate = dayjs(todo.dueDate).format('YYYY-MM-DD');
-    }
+    const formattedTodo = {
+      ...todo,
+      title: todo.title.trim(),
+      description: todo.description?.trim(),
+      dueDate: todo.dueDate
+        ? dayjs(todo.dueDate).format('YYYY-MM-DD')
+        : undefined,
+    };
 
     setLoading(true);
     try {
       if (initialState) {
-        await patch({ id: initialState.id, ...todo });
+        await patch({ id: initialState.id, ...formattedTodo });
       } else {
-        await create(todo);
+        await create(formattedTodo);
       }
       onCancel();
     } catch (e) {
