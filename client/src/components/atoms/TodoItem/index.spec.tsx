@@ -41,7 +41,7 @@ describe('TodoItem', () => {
   });
 
   it('handles button clicks', async () => {
-    const { getByLabelText, getByRole } = render(
+    const { getByLabelText, getByRole, queryByRole } = render(
       <TodoItem
         todo={todos[0]}
         onToggle={onToggle}
@@ -60,9 +60,12 @@ describe('TodoItem', () => {
     expect(onToggle).toBeCalled();
     expect(onEdit).toBeCalled();
 
+    let yesButton = queryByRole('button', { name: 'Yes' });
+    expect(yesButton).toBeNull();
+
     await userEvent.click(deleteButton);
 
-    const yesButton = getByRole('button', { name: 'Yes' });
+    yesButton = getByRole('button', { name: 'Yes' });
     await userEvent.click(yesButton);
 
     expect(onRemove).toBeCalled();

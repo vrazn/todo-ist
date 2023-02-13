@@ -1,6 +1,8 @@
 import { rest } from 'msw';
 import { ITodo } from 'todo-list';
 
+const URI = process.env.NEXT_PUBLIC_BACKEND_URL;
+
 export const todos = [
   {
     id: 1,
@@ -34,40 +36,43 @@ export const emptyTodos: ITodo[] = [];
 
 export const error = { message: 'Test error' };
 
-export const getEmpty = rest.get('/todos', (_req, res, ctx) => {
+export const getEmpty = rest.get(`${URI}/todos`, (_req, res, ctx) => {
   return res(ctx.delay(100), ctx.status(200), ctx.json(emptyTodos));
 });
 
 export const getSuccessStub: ITodo[] = [];
 
-export const getSuccess = rest.get('/todos', (_req, res, ctx) => {
+export const getSuccess = rest.get(`${URI}/todos`, (_req, res, ctx) => {
   return res(ctx.delay(100), ctx.status(200), ctx.json(todos));
 });
 
-export const getError = rest.get('/todos', (_req, res, ctx) => {
+export const getError = rest.get(`${URI}/todos`, (_req, res, ctx) => {
   return res(ctx.delay(100), ctx.status(500), ctx.json(error));
 });
 
-export const postSuccess = rest.post('/todos', (_req, res, ctx) => {
+export const postSuccess = rest.post(`${URI}/todos`, (_req, res, ctx) => {
   return res(ctx.delay(100), ctx.status(201), ctx.json(todo));
 });
 
-export const postError = rest.post('/todos', (_req, res, ctx) => {
+export const postError = rest.post(`${URI}/todos`, (_req, res, ctx) => {
   return res(ctx.delay(100), ctx.status(500), ctx.json(error));
 });
 
-export const patchSuccess = rest.patch('/todos/:id', (_req, res, ctx) => {
+export const patchSuccess = rest.patch(`${URI}/todos/:id`, (_req, res, ctx) => {
   return res(ctx.delay(100), ctx.status(200), ctx.json(todo));
 });
 
-export const patchError = rest.patch('/todos/:id', (_req, res, ctx) => {
+export const patchError = rest.patch(`${URI}/todos/:id`, (_req, res, ctx) => {
   return res(ctx.delay(100), ctx.status(500), ctx.json(error));
 });
 
-export const deleteSuccess = rest.delete('/todos/:id', (_req, res, ctx) => {
-  return res(ctx.delay(100), ctx.status(200), ctx.json(todo));
-});
+export const deleteSuccess = rest.delete(
+  `${URI}/todos/:id`,
+  (_req, res, ctx) => {
+    return res(ctx.delay(100), ctx.status(200), ctx.json(todo));
+  },
+);
 
-export const deleteError = rest.delete('/todos/:id', (_req, res, ctx) => {
+export const deleteError = rest.delete(`${URI}/todos/:id`, (_req, res, ctx) => {
   return res(ctx.delay(100), ctx.status(500), ctx.json(error));
 });
