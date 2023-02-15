@@ -13,6 +13,7 @@ import classNames from 'classnames';
 import type { ITodo } from 'todo-list';
 
 import styles from './styles.module.css';
+import isEqual from 'react-fast-compare';
 
 const { Text } = Typography;
 
@@ -84,4 +85,4 @@ const Item: React.FC<ITodoItemProps> = ({
   );
 };
 
-export const TodoItem = React.memo(Item);
+export const TodoItem = React.memo(Item, isEqual);

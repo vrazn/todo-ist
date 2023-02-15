@@ -26,6 +26,14 @@ export const getProgressWidth = (
   if (screens.xs) return 100;
 };
 
+const columns = {
+  xs: { span: 23 },
+  sm: { span: 23 },
+  md: { span: 21 },
+  lg: { span: 20 },
+  xl: { span: 18 },
+};
+
 export const Header = () => {
   const screens = Grid.useBreakpoint();
 
@@ -33,7 +41,7 @@ export const Header = () => {
 
   const percent =
     !isLoading && todos?.length
-      ? // done / all * 100%
+      ? // Calculates the done / all ratio
         Math.round(
           (todos.reduce((acc, curr) => {
             if (curr.isDone) acc++;
@@ -48,11 +56,11 @@ export const Header = () => {
     <Layout.Header className={styles.header}>
       <Row justify="center">
         <Col
-          xs={{ span: 23 }}
-          sm={{ span: 23 }}
-          md={{ span: 21 }}
-          lg={{ span: 20 }}
-          xl={{ span: 18 }}
+          xs={columns.xs}
+          sm={columns.sm}
+          md={columns.md}
+          lg={columns.lg}
+          xl={columns.xl}
         >
           <Row justify="end" align="middle">
             <Space size="large" direction="horizontal">
@@ -65,10 +73,15 @@ export const Header = () => {
                   }}
                 >
                   <Text>All tasks:</Text>
-                  <Progress percent={percent} status="active" />
+                  <Progress
+                    aria-label="Task completition progress"
+                    percent={percent}
+                    status="active"
+                  />
                 </div>
               )}
               <Avatar
+                alt="user avatar"
                 size={64}
                 src="https://avatars.githubusercontent.com/u/8733843?s=96"
               />

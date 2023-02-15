@@ -25,6 +25,7 @@ exports[`Header on fetch returning error renders without change 1`] = `
                 style="width: 64px; height: 64px; line-height: 64px; font-size: 18px;"
               >
                 <img
+                  alt="user avatar"
                   src="https://avatars.githubusercontent.com/u/8733843?s=96"
                 />
               </span>
@@ -62,6 +63,7 @@ exports[`Header on fetch returning non-empty array renders without change 1`] = 
                 style="width: 64px; height: 64px; line-height: 64px; font-size: 18px;"
               >
                 <img
+                  alt="user avatar"
                   src="https://avatars.githubusercontent.com/u/8733843?s=96"
                 />
               </span>
@@ -99,6 +101,7 @@ exports[`Header on initial load renders without change 1`] = `
                 style="width: 64px; height: 64px; line-height: 64px; font-size: 18px;"
               >
                 <img
+                  alt="user avatar"
                   src="https://avatars.githubusercontent.com/u/8733843?s=96"
                 />
               </span>

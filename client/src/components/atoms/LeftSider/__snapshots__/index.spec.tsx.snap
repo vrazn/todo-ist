@@ -3,8 +3,8 @@
 exports[`LeftSider when screen is large renders without change 1`] = `
 <div>
   <aside
-    class="ant-layout-sider ant-layout-sider-light ant-layout-sider-collapsed ant-layout-sider-below sider"
-    style="max-width: 80px; min-width: 80px; width: 80px; flex: 0 0 80px;"
+    class="ant-layout-sider ant-layout-sider-light sider"
+    style="max-width: 300px; min-width: 300px; width: 300px; flex: 0 0 300px;"
   >
     <div
       class="ant-layout-sider-children"
@@ -41,7 +41,7 @@ exports[`LeftSider when screen is large renders without change 1`] = `
         </button>
       </div>
       <ul
-        class="ant-menu ant-menu-root ant-menu-vertical ant-menu-light ant-menu-inline-collapsed css-dev-only-do-not-override-ixblex"
+        class="ant-menu ant-menu-root ant-menu-inline ant-menu-light css-dev-only-do-not-override-ixblex"
         data-menu-list="true"
         role="menu"
         tabindex="0"
@@ -222,8 +222,8 @@ exports[`LeftSider when screen is large renders without change 1`] = `
 exports[`LeftSider when screen is small renders without change 1`] = `
 <div>
   <aside
-    class="ant-layout-sider ant-layout-sider-light sider"
-    style="flex: 0 0 300px; max-width: 300px; min-width: 300px; width: 300px;"
+    class="ant-layout-sider ant-layout-sider-light ant-layout-sider-collapsed sider"
+    style="flex: 0 0 80px; max-width: 80px; min-width: 80px; width: 80px;"
   >
     <div
       class="ant-layout-sider-children"
@@ -257,7 +257,7 @@ exports[`LeftSider when screen is small renders without change 1`] = `
         </button>
       </div>
       <ul
-        class="ant-menu ant-menu-root ant-menu-inline ant-menu-light css-dev-only-do-not-override-ixblex"
+        class="ant-menu ant-menu-root ant-menu-vertical ant-menu-light ant-menu-inline-collapsed css-dev-only-do-not-override-ixblex"
         data-menu-list="true"
         role="menu"
         tabindex="0"
@@ -266,7 +266,6 @@ exports[`LeftSider when screen is small renders without change 1`] = `
           class="ant-menu-item ant-menu-item-selected"
           data-menu-id="rc-menu-uuid-test-all"
           role="menuitem"
-          style="padding-left: 24px;"
           tabindex="-1"
         >
           <span
@@ -298,7 +297,6 @@ exports[`LeftSider when screen is small renders without change 1`] = `
           class="ant-menu-item"
           data-menu-id="rc-menu-uuid-test-today"
           role="menuitem"
-          style="padding-left: 24px;"
           tabindex="-1"
         >
           <span
@@ -333,7 +331,6 @@ exports[`LeftSider when screen is small renders without change 1`] = `
           class="ant-menu-item"
           data-menu-id="rc-menu-uuid-test-important"
           role="menuitem"
-          style="padding-left: 24px;"
           tabindex="-1"
         >
           <span
@@ -365,7 +362,6 @@ exports[`LeftSider when screen is small renders without change 1`] = `
           class="ant-menu-item"
           data-menu-id="rc-menu-uuid-test-uncompleted"
           role="menuitem"
-          style="padding-left: 24px;"
           tabindex="-1"
         >
           <span
@@ -397,7 +393,6 @@ exports[`LeftSider when screen is small renders without change 1`] = `
           class="ant-menu-item"
           data-menu-id="rc-menu-uuid-test-completed"
           role="menuitem"
-          style="padding-left: 24px;"
           tabindex="-1"
         >
           <span

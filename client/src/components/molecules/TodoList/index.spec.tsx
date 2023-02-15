@@ -1,10 +1,4 @@
-import {
-  act,
-  findByText,
-  fireEvent,
-  render,
-  waitFor,
-} from '@testing-library/react';
+import { act, render, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { setupServer } from 'msw/node';
 import { SWRConfig } from 'swr';

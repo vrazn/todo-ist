@@ -36,7 +36,7 @@ const items: MenuProps['items'] = [
 
 export interface ILeftSiderProps {
   onPressAdd: () => void;
-  onMenuSelect: MenuProps['onSelect'];
+  onMenuSelect: ({ key }: { key: string }) => void;
 }
 
 const Sider = ({ onPressAdd, onMenuSelect }: ILeftSiderProps) => {
@@ -44,7 +44,7 @@ const Sider = ({ onPressAdd, onMenuSelect }: ILeftSiderProps) => {
 
   return (
     <Layout.Sider
-      breakpoint="lg"
+      collapsed={!screens.lg}
       theme="light"
       width={300}
       className={styles.sider}
@@ -57,7 +57,7 @@ const Sider = ({ onPressAdd, onMenuSelect }: ILeftSiderProps) => {
           icon={<FileAddOutlined />}
           onClick={onPressAdd}
         >
-          {screens.lg === false ? '' : 'Add new task'}
+          {!screens.lg ? '' : 'Add new task'}
         </Button>
       </div>
       <Menu

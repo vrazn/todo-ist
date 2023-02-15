@@ -1,4 +1,4 @@
-import { act, fireEvent, render, waitFor } from '@testing-library/react';
+import { fireEvent, render, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { setupServer } from 'msw/node';
 import { SWRConfig } from 'swr';
@@ -24,6 +24,7 @@ describe('TodoFormModal', () => {
   it('renders nothing when open={false}', () => {
     const { queryByRole } = render(
       <TodoFormModal open={false} onCancel={onCancel} />,
+      { wrapper: Wrapper },
     );
 
     expect(queryByRole('dialog')).toMatchSnapshot();
@@ -32,6 +33,7 @@ describe('TodoFormModal', () => {
   it('renders without change when open={true}', () => {
     const { queryByRole } = render(
       <TodoFormModal open={true} onCancel={onCancel} />,
+      { wrapper: Wrapper },
     );
     expect(queryByRole('dialog')).toMatchSnapshot();
   });
@@ -39,6 +41,7 @@ describe('TodoFormModal', () => {
   it('handles button clicks and triggers validations', async () => {
     const { getByText, getByLabelText } = render(
       <TodoFormModal open={true} onCancel={onCancel} />,
+      { wrapper: Wrapper },
     );
 
     const button = getByText('Save');
@@ -91,6 +94,7 @@ describe('TodoFormModal', () => {
           open={true}
           onCancel={onCancel}
         />,
+        { wrapper: Wrapper },
       );
 
       const button = getByText('Save');
@@ -114,6 +118,7 @@ describe('TodoFormModal', () => {
           open={true}
           onCancel={onCancel}
         />,
+        { wrapper: Wrapper },
       );
 
       const button = getByText('Save');
@@ -135,6 +140,7 @@ describe('TodoFormModal', () => {
           open={true}
           onCancel={onCancel}
         />,
+        { wrapper: Wrapper },
       );
 
       const button = getByText('Save');
@@ -156,6 +162,7 @@ describe('TodoFormModal', () => {
           open={true}
           onCancel={onCancel}
         />,
+        { wrapper: Wrapper },
       );
 
       const button = getByText('Save');
